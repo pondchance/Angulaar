@@ -8,7 +8,11 @@ import { FormsModule } from '@angular/forms'
 import { GetphotoService } from './services/getphoto.service'
 
 import { HttpModule } from '@angular/http'
-import {RouterModule,Routes} from "@angular/router" //เพิ่ม
+import {RouterModule,Routes} from "@angular/router";
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component'; //เพิ่ม
 const appRoutes:Routes = [
   {path:"",component:UserComponent},
   {path:"about",component:AboutusComponent}
@@ -18,7 +22,8 @@ const appRoutes:Routes = [
   declarations: [
     AppComponent,
     UserComponent,
-    AboutusComponent
+,
+    LoginComponent, HomeComponent, HeaderComponent, FooterComponent  , AboutusComponent
     
   ],
   imports: [
